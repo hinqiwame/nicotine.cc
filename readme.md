@@ -1,3 +1,3 @@
 # nicotine.cc
 
-![](loader/assets/logo.jpg)
+![](loader/assets/icon.jpg)
