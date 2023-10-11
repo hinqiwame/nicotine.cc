@@ -269,6 +269,8 @@ void Resolver::ResolveAngles(Player* player, LagRecord* record) {
 	else if (activity == 979 && curr->m_weight == 0 && delta > .22f)
 		AntiFreestand(record);
 
+        // todo: add resolve for stand, activity 979 and 980.
+
 	// normalize the eye angles, doesn't really matter but its clean.
 	math::NormalizeAngle(record->m_eye_angles.y);
 }
@@ -574,7 +576,7 @@ void Resolver::ResolveStand(AimPlayer* data, LagRecord* record) {
 				record->m_eye_angles.y = move->m_body + 180.f;
 			}
 
-			// we missed 4 shots.
+			// we missed 4 shots. todo: maybe ill edit this
 			else if (data->m_stand_index > 4 && act != 980) {
 				// try backwards.
 				record->m_eye_angles.y = away + 180.f;
