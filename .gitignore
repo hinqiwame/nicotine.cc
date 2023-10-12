@@ -30,3 +30,7 @@
 
 # Directories for python
 venv/
+
+# Directories for cpp
+.vs/
+vs/
