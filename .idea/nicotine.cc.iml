@@ -2,6 +2,13 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/cheat/.vs/nicotine/v17/ipch/AutoPCH/2f0efb845a734087" />
+      <excludeFolder url="file://$MODULE_DIR$/cheat/.vs/nicotine/v17/ipch/AutoPCH/3028e9214606f89b" />
+      <excludeFolder url="file://$MODULE_DIR$/cheat/.vs/nicotine/v17/ipch/AutoPCH/4eff9bf5ed391560" />
+      <excludeFolder url="file://$MODULE_DIR$/cheat/.vs/nicotine/v17/ipch/AutoPCH/5065c27d90abf5ee" />
+      <excludeFolder url="file://$MODULE_DIR$/cheat/.vs/nicotine/v17/ipch/AutoPCH/becbfa2f81f1ce51" />
+      <excludeFolder url="file://$MODULE_DIR$/cheat/.vs/nicotine/v17/ipch/AutoPCH/d57c26b01ece690d" />
+      <excludeFolder url="file://$MODULE_DIR$/cheat/vs" />
       <excludeFolder url="file://$MODULE_DIR$/loader/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (nicotine.cc)" jdkType="Python SDK" />
