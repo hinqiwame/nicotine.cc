@@ -16,7 +16,7 @@ os.system("title nicotine.cc / https://github.com/qqqwwqeeqqwe/nicotine.cc")
 def cli():
     pid = get_pid("csgo.exe")
     if pid != None:
-        inject(pid, "nicotine.dll")
+        inject(pid, "nicotine-release.dll")
     else:
         print(log("!", "csgo process was not found."))
         time.sleep(5)
