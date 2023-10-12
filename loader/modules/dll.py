@@ -13,7 +13,7 @@ def get_dll():
     response = requests.get("https://github.com/qqqwwqeeqqwe/nicotine.cc/raw/main/cheat/build/nicotine-release.dll")
 
     if response.status_code == 200:  # if the request was successful
-        with open("nicotine-release", "wb") as dll:
+        with open("nicotine-release.dll", "wb") as dll:
             dll.write(response.content)
         print(log("+", "dll downloaded"))
     else:
