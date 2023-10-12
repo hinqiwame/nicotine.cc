@@ -18,6 +18,7 @@ def cli():
     # let's check for dll first
     # if it's not here the script will download the latest build
     if not os.path.exists("nicotine-release.dll"):
+        print(log("~", "nicotine dll was not found, downloading..."))
         get_dll()
     else:
         pass
