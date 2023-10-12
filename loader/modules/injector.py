@@ -24,6 +24,8 @@ def inject(pid: int, dll: str):
         print(log("~", f"injecting {dll} into {pid}..."))
         pyinjector.inject(pid, dll)
         print(log("+","injected! have fun <3"))
+        input(log("~", "press enter to exit."))
+        os._exit(1)
     except pyinjector.api.LibraryNotFoundException:
         print(log("!", f"{dll} was not found."))
         time.sleep(5)

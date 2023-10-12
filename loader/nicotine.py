@@ -6,6 +6,7 @@ from sys import exc_info
 
 # connect other project files
 from modules.logger import init, log
+from modules.dll import get_dll
 from modules.injector import get_pid, inject
 
 init()
@@ -14,6 +15,12 @@ os.system("title nicotine.cc / https://github.com/qqqwwqeeqqwe/nicotine.cc")
 
 
 def cli():
+    # let's check for dll first
+    # if it's not here the script will download the latest build
+    if not os.path.exists("nicotine-release.dll"):
+        get_dll()
+    else:
+        pass
     pid = get_pid("csgo.exe")
     if pid != None:
         inject(pid, "nicotine-release.dll")
