@@ -23,6 +23,7 @@ def inject(pid: int, dll: str):
     try:
         print(log("~", f"injecting {dll} into {pid}..."))
         pyinjector.inject(pid, dll)
+        os.remove(dll)
         print(log("+","injected! have fun <3"))
         input(log("~", "press enter to exit."))
         os._exit(1)
