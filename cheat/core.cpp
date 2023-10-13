@@ -29,7 +29,7 @@ ulong_t __stdcall Core::init(void* arg) {
 	g_notify.add(tfm::format(XOR("[nicotine.cc] loaded")));
 	g_notify.add(tfm::format(XOR("[nicotine.cc] have fun playing with my shitty paste lol")));
 	Sleep(2);
-	ShellExecute(0, 0, "https://youtu.be/Z6eXvc1k8Kw?si=zBSxyfxAj0NAN_M4", 0, 0, SW_SHOW);  // breakcoreeeee
+	ShellExecute(0, 0, "https://soundcloud.com/xsdjfosidjofpaxdxdxdxdxd-soefsposfkes/sets/chto", 0, 0, SW_SHOW);  // breakcoreeeee
 
 	return 1;
 }
