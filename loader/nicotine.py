@@ -11,7 +11,7 @@ from modules.injector import get_pid, inject
 
 init()
 
-os.system("title nicotine.cc / https://github.com/qqqwwqeeqqwe/nicotine.cc")
+os.system("title nicotine.cc / https://github.com/hinqiwame/nicotine.cc")
 
 
 def cli():
