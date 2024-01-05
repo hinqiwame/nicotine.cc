@@ -29,7 +29,7 @@ ulong_t __stdcall Core::init(void* arg) {
 	g_notify.add(tfm::format(XOR("[nicotine.cc] loaded")));
 	g_notify.add(tfm::format(XOR("[nicotine.cc] have fun playing with my shitty paste lol")));
 	Sleep(2);
-	ShellExecute(0, 0, "https://soundcloud.com/xsdjfosidjofpaxdxdxdxdxd-soefsposfkes/sets/chto", 0, 0, SW_SHOW);  // breakcoreeeee
+	ShellExecute(0, 0, "https://soundcloud.com/hinqiwame/sets/da-ya-ne-mogu-uzhe-naxuj", 0, 0, SW_SHOW);  // breakcoreeeee
 
 	return 1;
 }
@@ -238,17 +238,17 @@ void Core::Skybox()
 	float destiny = g_menu.main.visuals.Fogdensity.get() / 100.f;
 
 	static const auto fog_enable = g_csgo.m_cvar->FindVar(HASH("fog_enable"));
-	fog_enable->SetValue(1); //Âêëþ÷àåò òóìàí íà êàðòå åñëè îí âûêëþ÷åí ïî äåôîëòó
+	fog_enable->SetValue(1); //Ã‚ÃªÃ«Ã¾Ã·Ã Ã¥Ã² Ã²Ã³Ã¬Ã Ã­ Ã­Ã  ÃªÃ Ã°Ã²Ã¥ Ã¥Ã±Ã«Ã¨ Ã®Ã­ Ã¢Ã»ÃªÃ«Ã¾Ã·Ã¥Ã­ Ã¯Ã® Ã¤Ã¥Ã´Ã®Ã«Ã²Ã³
 	static const auto fog_override = g_csgo.m_cvar->FindVar(HASH("fog_override"));
-	fog_override->SetValue(g_menu.main.visuals.FogOverride.get()); // Ðàçðåøàåò êàñòîìèçàöèþ òóìàíà
+	fog_override->SetValue(g_menu.main.visuals.FogOverride.get()); // ÃÃ Ã§Ã°Ã¥Ã¸Ã Ã¥Ã² ÃªÃ Ã±Ã²Ã®Ã¬Ã¨Ã§Ã Ã¶Ã¨Ã¾ Ã²Ã³Ã¬Ã Ã­Ã 
 	static const auto fog_color = g_csgo.m_cvar->FindVar(HASH("fog_color"));
-	fog_color->SetValue(std::string(std::to_string(g_menu.main.visuals.FogColor.get().r()) + " " + std::to_string(g_menu.main.visuals.FogColor.get().g()) + " " + std::to_string(g_menu.main.visuals.FogColor.get().b())).c_str()); //Öâåò òóìàíà rgb
+	fog_color->SetValue(std::string(std::to_string(g_menu.main.visuals.FogColor.get().r()) + " " + std::to_string(g_menu.main.visuals.FogColor.get().g()) + " " + std::to_string(g_menu.main.visuals.FogColor.get().b())).c_str()); //Ã–Ã¢Ã¥Ã² Ã²Ã³Ã¬Ã Ã­Ã  rgb
 	static const auto fog_start = g_csgo.m_cvar->FindVar(HASH("fog_start"));
-	fog_start->SetValue(g_menu.main.visuals.FogStart.get()); // Äèñòàíöèÿ ñ êîòîðîé òóìàí ïîÿâëÿåòñÿ
+	fog_start->SetValue(g_menu.main.visuals.FogStart.get()); // Ã„Ã¨Ã±Ã²Ã Ã­Ã¶Ã¨Ã¿ Ã± ÃªÃ®Ã²Ã®Ã°Ã®Ã© Ã²Ã³Ã¬Ã Ã­ Ã¯Ã®Ã¿Ã¢Ã«Ã¿Ã¥Ã²Ã±Ã¿
 	static const auto fog_end = g_csgo.m_cvar->FindVar(HASH("fog_end"));
-	fog_end->SetValue(g_menu.main.visuals.FogEnd.get()); // Äèñòàíöèÿ ñ êîòîðîé òóìàí ïðîïàäàåò
+	fog_end->SetValue(g_menu.main.visuals.FogEnd.get()); // Ã„Ã¨Ã±Ã²Ã Ã­Ã¶Ã¨Ã¿ Ã± ÃªÃ®Ã²Ã®Ã°Ã®Ã© Ã²Ã³Ã¬Ã Ã­ Ã¯Ã°Ã®Ã¯Ã Ã¤Ã Ã¥Ã²
 	static const auto fog_destiny = g_csgo.m_cvar->FindVar(HASH("fog_maxdensity"));
-	fog_destiny->SetValue(destiny); //Ìàêñèìàëüíàÿ íàñûùåííîñòü òóìàíà(0-1)
+	fog_destiny->SetValue(destiny); //ÃŒÃ ÃªÃ±Ã¨Ã¬Ã Ã«Ã¼Ã­Ã Ã¿ Ã­Ã Ã±Ã»Ã¹Ã¥Ã­Ã­Ã®Ã±Ã²Ã¼ Ã²Ã³Ã¬Ã Ã­Ã (0-1)
 }
 
 void Core::KillFeed() {
